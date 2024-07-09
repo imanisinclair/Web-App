@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+        function add(){
+          var first_number = parseInt(document.getElementById("Text1").value);
+                  var second_number = parseInt(document.getElementById("Text2").value);
+                  var result = first_number + second_number;
+      
+                  document.getElementById("txtresult").value = result;   
+        }
+      </script>
+      <style>
+        .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .myDiv {
+    border: 1px outset gray;
+    background-color: rgb(255, 255, 255);
+    width: 500px; height: 400px; 
+    text-align: center;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+</style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Imani Sinclair WebApp.</title>
+  </head>
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">Welcome to my Web App</span>
+    <a class="navbar-brand" href="#">
+      </a>
+    </nav>
+    <div>
+        <div style="float: left">      
+        <img src="https://creationsbymanii.s3.amazonaws.com/IMG_0988.JPG" style="width:300 px; height: 300px;border: 5px outset purple;" />
+        </div>
+        <div>
+          <h2 style="border: 3px outset purple; "> Imani Sinclair </h2>
+            <p style="border:3px outset blueviolet; width: fit-content; "> Hi !! nice to meet you i am Imani Sinclair, happy to finally have this project working.
+                Looking forward to doing more front end work in the future.
+                 This is very cool to play around with and i will be adding more features to my web app. </p> 
+        </div>
+      </div>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+  <form action="/endpoint" method="post">
+    Enter #1 : <br>
+    <input type="text" id="Text1" name="TextBox1">
+    <br>
+    Enter #2 : <br>
+    <input type="text" id="Text2" name="TextBox2">
+    <br>
+    Result : <br>
+    <input type="text" id="txtresult" name="TextBox3">
+    <br>
+ <input type="button" name="clickbtn" value="Display Result" onclick="add()">
+</form>
+</html>
